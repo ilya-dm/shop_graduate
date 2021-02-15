@@ -1,0 +1,48 @@
+{% extends '../shop/base.html' %}
+{%load static%}
+{%block content%}
+<div role="main">
+
+  <div class="jumbotron">
+    <div class="container">
+        <h1 class="display-4">Добро пожаловать на сайт просто магазина</h1>
+    </div>
+  </div>
+        {%for category in categories%}
+            <div class="jumbotron">
+                <h2>{{category.name}}</h2>
+                <P>{{ category.description}}</P>
+            </div>
+            <div class="container mb-5">
+                  <div class="row" align="center">
+                  {% if not products %}
+                      <p>Здесь пока ничего нет</p>
+                  {% else %}
+                    {% for product in products %}
+                      {% if  product.category_id == category.id%}
+                      <div class="col-md-4" >
+                        <h2 >{{ product.name }}</h2>
+                        <a href=/{{ category.slug }}/{{ product.slug }} >
+                          <img src={{ product.image.url }} style="width: auto; height: 15rem;
+                          overflow: hidden; display: inline; justify-content: center; align-items:
+                          center; padding-bottom:1.5rem;" height="100%" width="auto">
+                          </a>
+                        <form method="post"  align ="center" action="{% url 'cart_add' product_id=product.id %}">
+                            {% csrf_token %}
+                            {{cart_product_form}}
+                            <input type="submit" class="btn btn-secondary" value="Добавить в корзину »">
+                        </form>
+                          </div>
+                      {% endif %}
+                    {% endfor %}
+                  {% endif %}
+              </div>
+            </div>
+    {% endfor %}
+
+<hr>
+<footer class="container">
+  <p>© Просто магазин </p>
+</footer>
+
+{%endblock%}

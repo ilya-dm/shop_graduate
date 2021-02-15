@@ -1,0 +1,20 @@
+[
+    {
+        "description": "Лучшие мобилы у нас!",
+        "id": 1,
+        "name": "Смартфоны",
+        "slug": "smartfony"
+    },
+    {
+        "description": "Стильно, модно, молодежно",
+        "id": 2,
+        "name": "Аксессуары",
+        "slug": "aksessuary"
+    },
+    {
+        "description": "Рай для меломана",
+        "id": 3,
+        "name": "Аудиотехника",
+        "slug": "audiotehnika"
+    }
+]

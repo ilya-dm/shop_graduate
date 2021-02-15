@@ -1,0 +1,46 @@
+{% extends 'shop/base.html' %}
+
+{% block content %}
+<body class="" data-gr-c-s-loaded="true">
+{% load static %}
+<div class="jumbotron">
+    <div class="container">
+        <h1 class="display-4">Оформление заказа</h1>
+    </div>
+  </div>
+     <div class="сol-lg-4 order-info">
+        <h3>Ваш заказ</h3>
+        <ul>
+            {%for key, values_list in cart.items%}
+                <li>
+                    {{values_list.quantity}} x {{ values_list.name}}
+                    <span>{{ values_list.total_price }}</span>
+                </li>
+            {% endfor %}
+        </ul>
+        <p>Итоговая цена: {{ total_price }}</p>
+
+    </div>
+ <div class="col-lg-4 col-md-8 col-sm-12">
+     <form action="" method="post" class="group-form">
+     {% csrf_token %}
+
+         {{form.first_name}}
+         <br>
+         {{form.last_name}}
+         <br>
+         {{form.email}}
+         <br>
+         {{form.city}}
+         <br>
+         {{form.address}}
+         <br>
+         {{form.postal_code}}
+         <br>
+         <a href="/order_created/">
+             <button type="submit" class="btn btn-primary">Оформить заказ</button>
+         </a>
+</div>
+{% endblock %}
+</body>
+</html>

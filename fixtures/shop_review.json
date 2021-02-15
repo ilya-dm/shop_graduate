@@ -1,0 +1,101 @@
+[
+    {
+        "id": 32,
+        "item_id": 1,
+        "name": "Илья",
+        "rating": 5,
+        "session": null,
+        "text": "уерр",
+        "timestamp": "2021-01-22 13:03:47.460928"
+    },
+    {
+        "id": 33,
+        "item_id": 1,
+        "name": "weg",
+        "rating": 2,
+        "session": "r0wrsyn3yjccpg6m9up9htfhjcnqkx0g",
+        "text": "f",
+        "timestamp": "2021-01-22 13:40:19.488501"
+    },
+    {
+        "id": 34,
+        "item_id": 1,
+        "name": "цуп",
+        "rating": 3,
+        "session": "r0wrsyn3yjccpg6m9up9htfhjcnqkx0g",
+        "text": "а",
+        "timestamp": "2021-01-22 13:40:19.488501"
+    },
+    {
+        "id": 35,
+        "item_id": 1,
+        "name": "цуа",
+        "rating": 3,
+        "session": "r0wrsyn3yjccpg6m9up9htfhjcnqkx0g",
+        "text": "ф",
+        "timestamp": "2021-01-22 13:44:09.258134"
+    },
+    {
+        "id": 36,
+        "item_id": 1,
+        "name": "ввпр",
+        "rating": 2,
+        "session": "r0wrsyn3yjccpg6m9up9htfhjcnqkx0g",
+        "text": "пркпр",
+        "timestamp": "2021-01-22 13:44:09.258134"
+    },
+    {
+        "id": 37,
+        "item_id": 2,
+        "name": "укппуцкп",
+        "rating": 2,
+        "session": "r0wrsyn3yjccpg6m9up9htfhjcnqkx0g",
+        "text": "уцапйукпйцуа",
+        "timestamp": "2021-01-22 14:08:31.016777"
+    },
+    {
+        "id": 38,
+        "item_id": 1,
+        "name": "wrgh334rg",
+        "rating": 1,
+        "session": "5u6l0zmnzjz2csakglfrcrphlpm1sv1t",
+        "text": "1",
+        "timestamp": "2021-01-29 11:44:27.959432"
+    },
+    {
+        "id": 39,
+        "item_id": 1,
+        "name": "admin",
+        "rating": 5,
+        "session": "jka4nblfivup9jaf2ohbas31zqxp8txh",
+        "text": "aaa",
+        "timestamp": "2021-02-03 23:42:59.369054"
+    },
+    {
+        "id": 40,
+        "item_id": 1,
+        "name": "qwehw4u",
+        "rating": 5,
+        "session": "wwkpwjcqykgd7ycu4npsveiyoqsjp3gi",
+        "text": "",
+        "timestamp": "2021-02-08 21:06:15.513007"
+    },
+    {
+        "id": 41,
+        "item_id": 3,
+        "name": "2323232",
+        "rating": 1,
+        "session": "wwkpwjcqykgd7ycu4npsveiyoqsjp3gi",
+        "text": "earhewrg",
+        "timestamp": "2021-02-08 21:06:15.513007"
+    },
+    {
+        "id": 42,
+        "item_id": 1,
+        "name": "q4e5ujw45jae",
+        "rating": 4,
+        "session": "31fp74nmq2wi73z2o2fnnbtqz14nch23",
+        "text": "",
+        "timestamp": "2021-02-10 15:53:11.105118"
+    }
+]

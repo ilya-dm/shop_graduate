@@ -1,0 +1,65 @@
+[
+    {
+        "category_id": 1,
+        "description": "Телефон с яблоком",
+        "id": 1,
+        "image": "iphone7_7pDxrlc.webp",
+        "name": "IPhone 7",
+        "price": 45000,
+        "slug": "iphone-7"
+    },
+    {
+        "category_id": 1,
+        "description": "Хорош, с какой стороны ни посмотри",
+        "id": 2,
+        "image": "samsungs8_eRVfgra.webp",
+        "name": "Samsung Galaxy S8",
+        "price": 40000,
+        "slug": "samsung-galaxy-s8"
+    },
+    {
+        "category_id": 3,
+        "description": "Наушники с яблоком",
+        "id": 3,
+        "image": "airpods_Ejba7Fm.jpg",
+        "name": "AirPods",
+        "price": 10000,
+        "slug": "airpods"
+    },
+    {
+        "category_id": 3,
+        "description": "Отличные наушники",
+        "id": 4,
+        "image": "galaxy_buds_mt4okhi.jpg",
+        "name": "Galaxy Buds",
+        "price": 7000,
+        "slug": "galaxy-buds"
+    },
+    {
+        "category_id": 1,
+        "description": "Смартфон с яблоком, только круче",
+        "id": 5,
+        "image": "iphone11.webp",
+        "name": "IPhone 11",
+        "price": 65000,
+        "slug": "iphone-11"
+    },
+    {
+        "category_id": 1,
+        "description": "Топ за свои деньги",
+        "id": 6,
+        "image": "pocophone.webp",
+        "name": "Xiaomi Pocophone",
+        "price": 19000,
+        "slug": "xiaomi-pocophone"
+    },
+    {
+        "category_id": 1,
+        "description": "Топовая начинка",
+        "id": 7,
+        "image": "samsung_s10.webp",
+        "name": "Samsung Galaxy S10",
+        "price": 55000,
+        "slug": "samsung-galaxy-s10"
+    }
+]

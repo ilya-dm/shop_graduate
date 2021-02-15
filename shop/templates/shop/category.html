@@ -1,0 +1,48 @@
+{% extends 'shop/base.html' %}
+{% load static %}
+{% block content %}
+<main role="main">
+<br><br>
+<div class="container">
+    <div class="">
+              {% if not page_items  %}
+                  <h2>Здесь пока ничего нет</h2>
+              {% else %}
+
+                  <h2 align="center" style="background-color:;">{{category}}</h2>
+        <div class="row" style="padding-top:2rem;">
+              {% for product in page_items %}
+
+                  <div style="display:block; align:center;" >
+                    <h4 align="center">{{ product.name }}</h4>
+                    <a href=./{{ category_slug }}/{{ product.slug }} >
+                      <img src={{ product.image.url }} style="width: auto; height: 25rem;
+                      overflow: hidden; display: inline; justify-content: center; align-items: center; margin-bottom:1.25rem;"
+                           width="auto" height="100%">
+                      </a>
+                    <form method="post" align ="center" action="{% url 'cart_add' product_id=product.id %}">
+                        {% csrf_token %}
+                        {{cart_product_form}}
+                      <input type="submit" class="btn btn-secondary" align="center" value="Добавить в корзину »">
+                    </form>
+                  </div>
+                {% endfor %}
+              {% endif %}
+    </div>
+    <div class="row">
+        <div class="col-md-12" style="margin-top: 20px;">
+            {% if page_items.has_previous %}
+                <a href="?page={{ prev_page_url }}">Предыдущая</a>
+                {% endif %}
+            {% if page_items.has_next %}
+                <a href="?page={{ next_page_url }}">Следующая</a>
+                {% endif %}
+        </div>
+    </div>
+</div>
+</main>
+{% endblock %}
+<hr>
+<footer class="container">
+  <p>© Просто магазин 2018</p>
+</footer>
