@@ -23,7 +23,9 @@ class Product(models.Model):
 
 
 class Category(models.Model):
-    '''Модель для категории товара'''
+    '''
+    Модель для категории товара
+    '''
     name = models.CharField("Название категории", max_length=150)
     description = models.TextField(verbose_name='Описание', blank=True)
     slug = models.SlugField()
