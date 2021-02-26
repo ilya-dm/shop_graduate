@@ -1,12 +1,13 @@
-from django.core.paginator import Paginator, PageNotAnInteger, EmptyPage
-from django.http import HttpResponseRedirect
-from django.shortcuts import render, get_object_or_404, redirect
 from django.contrib import messages
 from django.contrib.auth import authenticate, login, logout
+from django.core.paginator import Paginator
+from django.http import HttpResponseRedirect
+from django.shortcuts import render, get_object_or_404, redirect
 from django.views.decorators.http import require_POST
-from .models import Product, Review, Category
-from .forms import ReviewForm, RegistrationForm, LoginForm, CartAddForm
+
 from shop.cart import Cart
+from .forms import ReviewForm, RegistrationForm, LoginForm, CartAddForm
+from .models import Product, Review, Category
 
 
 def get_session_id(request):
@@ -116,7 +117,6 @@ def cart_add(request, product_id):
     cart = Cart(request)
     form = CartAddForm(request.POST)
     product = (get_object_or_404(Product, id=product_id))
-    print(product)
     if form.is_valid():
         cd = form.cleaned_data
         cart.add(product=product,
@@ -130,7 +130,6 @@ def delete_item(request, product_id):
     cart = Cart(request)
     form = CartAddForm(request.POST)
     product = (get_object_or_404(Product, id=product_id))
-    print(product)
     if form.is_valid():
         cd = form.cleaned_data
         cart.add(product=product,

@@ -1,9 +1,9 @@
-from django.shortcuts import render, get_object_or_404, redirect
+from django.shortcuts import render, get_object_or_404
 
 # Create your views here.
 from order.forms import OrderCreateForm
-from shop.cart import Cart
 from order.models import OrderItem
+from shop.cart import Cart
 from shop.models import Product
 
 

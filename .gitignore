@@ -1,7 +1,7 @@
 .idea/
 static/admin/
 static/ckeditor/
-
+.venv
 *.pyc
 
 settings_local.py

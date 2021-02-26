@@ -61,9 +61,9 @@ class RegistrationForm(UserCreationForm):
 
 class LoginForm(forms.Form):
     username = forms.CharField(label='Логин',
-                            max_length=50,
-                            widget=forms.TextInput
-                            )
+                               max_length=50,
+                               widget=forms.TextInput
+                               )
     password = forms.CharField(label='Пароль',
                                widget=forms.PasswordInput)
 
@@ -73,4 +73,3 @@ class CartAddForm(forms.Form):
 
 # class CartRemoveForm(forms.Form):
 #
-
